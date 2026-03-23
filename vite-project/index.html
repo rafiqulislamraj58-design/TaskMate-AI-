@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My to do List</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="hader mt-6 mr-5 ml-6">
+        <input id="task" class="bg-gray-300 rounded-sm px-5" type="text" placeholder="enter your todays task">
+    <button id="add" class="bg-gray-400 px-2 py-2 rounded-md">add</button>
+    </div>
+    <div class="container ml-6">
+
+    </div>
+    <div class="aibox m-6 bg-[#f0f8ff] p-[10px] rounded-[8px] mt-2.5 border-l-4 border-[#2ecc71]">
+        <p id="ai-message">
+            <i class="ri-robot-2-line text-[#2ecc71]"></i>
+            <strong>AI:</strong> আসসালামু আলাইকুম ভাই! আপনার আজকের কোনো টাস্ক নেই।</p>
+    </div>
+    <div class="stats-container ml-6 mt-4 flex gap-4 items-center">
+    <div class="diamond-box flex items-center bg-blue-100 px-3 py-1 rounded-full text-blue-700 font-bold border border-blue-200">
+        <i class="ri-vip-diamond-fill mr-1 text-blue-500"></i>
+        <span id="diamond-count">0</span>
+    </div>
+    <div class="xp-box flex items-center bg-green-100 px-3 py-1 rounded-full text-green-700 font-bold border border-green-200">
+        <span class="text-xs uppercase mr-1">XP:</span>
+        <span id="xp-count">0</span>
+    </div>
+    </div>
+    <div class="mt-6 ml-6">
+        <input type="text" id="ai-input" class="flex-1 bg-white border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:border-[#2ecc71]" placeholder="আপনার লক্ষ্য বা প্রশ্ন লিখুন...">
+        <button id="send-ai" class="bg-[#2ecc71] text-white px-4 py-2 rounded-md hover:bg-[#27ae60] transition-all">
+           <i class="ri-send-plane-2-fill"></i></button>
+    </div>
+    <script type="module" src="./script.js"></script>
+    <script type="module" src="./ai.js"></script>
+</body>
+</html>

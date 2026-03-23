@@ -1,0 +1,33 @@
+@import "tailwindcss";
+.card{
+    margin-top: 20px;
+    border-color: aliceblue;
+    border-radius: 8px;
+    color: rgb(75, 74, 74);
+    box-shadow: 0px 5px 4px rgba(0.1, 0.1, 0.1 ,0.1);
+    padding: auto;
+    width: 200px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 0px;
+    height: 100%;
+    background-color: #2ecc71;
+    z-index: -1;
+    transition: width 0.60s ease-in-out;
+}
+.card.checked::before{
+    width: 100%;
+
+}
+.card.checked {
+    color: white;
+}
